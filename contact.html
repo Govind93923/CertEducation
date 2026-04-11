@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | CERTEDUCATION</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css?v=4">
+    <style>
+        .form-group { margin-bottom: 20px; text-align: left; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: var(--dark-blue); }
+        .form-control { width: 100%; padding: 12px 15px; border-radius: 8px; border: 1px solid #cbd5e1; background: #f8fafc; font-family: 'Inter', sans-serif; font-size: 1rem; }
+        .form-control:focus { outline: none; border-color: var(--secondary-orange); box-shadow: 0 0 0 3px rgba(243, 140, 42, 0.2); }
+        textarea.form-control { resize: vertical; min-height: 120px; }
+    </style>
+</head>
+<body>
+    <div class="preloader"><div class="loader-content"><span class="loader-circle"></span><h2>CERTEDUCATION</h2></div></div>
+    <div class="scroll-progress"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo"><img src="assets/company_logo.png" alt="CertEducation Logo" class="brand-logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vouchers.html">Exam Vouchers</a></li>
+                <li><a href="training.html">Training Courses</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary magnetic-btn">Get in Touch</a>
+            <div class="mobile-menu-btn"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="hero" style="padding: 180px 0 80px; min-height: auto;">
+        <div class="hero-bg"><div class="blob blob-2"></div></div>
+        <div class="container text-center position-relative fade-in-up">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Fill out the form below to initiate your certification journey.</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid-3">
+                <div class="feature-card tilt" style="grid-column: span 1;">
+                    <h3>Reach Us Directly</h3>
+                    <p style="margin-bottom: 20px;">Connect with our dedicated support team to assist with corporate pricing, bulk voucher requests, and training sessions.</p>
+                    <hr style="border: none; border-top: 1px solid #e2e8f0; margin-bottom: 20px;">
+                    <p><strong>Email</strong><br><a href="mailto:certeducationofficial@gmail.com" style="color: var(--primary-blue);">certeducationofficial@gmail.com</a></p>
+                    <p style="margin-top: 15px;"><strong>Phone</strong><br>+91 7799040625</p>
+                    <p style="margin-top: 15px;"><strong>Office Address</strong><br>26-103, 2nd floor, <br>R. R. Nagar, Kabela Road City,<br>Andhra Pradesh</p>
+                </div>
+                <div class="glass-card fade-in-up delay-1" style="grid-column: span 2; padding: 40px;">
+                    <form onsubmit="event.preventDefault(); alert('Message sent successfully! Our team will get back to you shortly.');">
+                        <div class="grid-3" style="grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject / Inquiry Type</label>
+                            <select id="subject" class="form-control" required>
+                                <option value="">Select an option...</option>
+                                <option value="Voucher Inquiry">Exam Voucher Inquiry</option>
+                                <option value="Training Details">Training Course Details</option>
+                                <option value="Corporate Partnership">Corporate Partnership</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary magnetic-btn btn-lg" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reuse footer -->
+    <footer class="footer">
+        <div class="container footer-grid-layout">
+            <div class="footer-col">
+                <a href="index.html" class="logo footer-logo"><img src="assets/company_logo.png" alt="Logo" class="brand-logo footer-brand-img"></a>
+                <p style="margin-top: 15px;">Empowering the next generation of IT professionals with official certifications and training.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vouchers.html">Exam Vouchers</a></li>
+                    <li><a href="training.html">Training Courses</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" id="contact">
+                <h4>Contact Details</h4>
+                <p><strong>Email:</strong><br><a href="mailto:certeducationofficial@gmail.com" class="text-white">certeducationofficial@gmail.com</a></p>
+                <p style="margin-top: 10px;"><strong>Phone:</strong><br><a href="tel:+917799040625" class="text-white">+91 7799040625</a></p>
+                <div class="social-links mt-2">
+                    <a href="#">Fb</a><a href="#">Tw</a><a href="#">Li</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center"><p>&copy; 2026 CertEducation. All rights reserved.</p></div>
+    </footer>
+    <script src="js/script.js?v=4"></script>
+</body>
+</html>

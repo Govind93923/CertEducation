@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CERTEDUCATION | Cloud & IT Certification Training</title>
+    <meta name="description"
+        content="CertEducation provides industry-focused training in Cloud Computing and IT certifications. We specialize in AWS training and offer other cloud and DevOps programs based on demand.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css?v=5">
+    <style>
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            color: #fff;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-icon {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-float span {
+                display: none;
+            }
+
+            .whatsapp-float {
+                padding: 15px;
+                border-radius: 50%;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-content">
+            <span class="loader-circle"></span>
+            <h2>CERTEDUCATION</h2>
+        </div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <img src="assets/company_logo.png" alt="CertEducation Logo" class="brand-logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="vouchers.html">Vouchers</a></li>
+                <li><a href="#features">Why Us</a></li>
+            </ul>
+            <a href="#training" class="btn btn-primary magnetic-btn">Enroll Now</a>
+            <div class="mobile-menu-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="fade-in-up"
+                    style="color: var(--secondary-orange); font-weight: 700; margin-bottom: 15px; letter-spacing: 1px; text-transform: uppercase;">
+                    All IT Certification Vouchers Available</p>
+                <h1 class="fade-in-up delay-1">Cloud &amp; IT Certification Training</h1>
+                <p class="fade-in-up delay-2">Learn • Get Certified • Build Your Career</p>
+                <div class="hero-buttons fade-in-up delay-3">
+                    <a href="#training" class="btn btn-primary btn-lg magnetic-btn">Enroll Now</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in-up delay-3">
+                <div class="glass-card">
+                    <img src="assets/hero.png" alt="Cloud & IT Certification Training">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about section">
+        <div class="container about-content">
+            <div class="about-text">
+                <h2>About CertEducation</h2>
+                <p>CertEducation provides industry-focused training in Cloud Computing and IT certifications. We
+                    specialize in AWS training and offer other cloud and DevOps programs based on demand.</p>
+                <a href="#training" class="btn btn-outline" style="margin-top: 10px;">Connect With Us</a>
+            </div>
+            <div class="about-image">
+                <img src="assets/about.png" alt="Expert-led corporate IT and cloud training session"
+                    class="rounded-image shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="certifications section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p class="slogan-text">👉 “End-to-End Training, Certification &amp; Voucher Support in One Platform”</p>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-image-container">
+                    <img src="assets/services.png" alt="Cloud Infrastructure Training"
+                        class="rounded-image hover-scale">
+                </div>
+                <div class="cert-list">
+                    <div class="cert-item">
+                        <h4>☁️ Cloud Training Programs</h4>
+                        <ul>
+                            <li>AWS Cloud Practitioner Training</li>
+                            <li>Advanced AWS &amp; Architecture Concepts</li>
+                            <li>On-demand training for Azure &amp; Google Cloud</li>
+                        </ul>
+                    </div>
+                    <div class="cert-item">
+                        <h4>⚙️ DevOps Training</h4>
+                        <ul>
+                            <li>Docker &amp; Containerization</li>
+                            <li>Kubernetes Fundamentals</li>
+                            <li>CI/CD Pipelines &amp; Automation</li>
+                        </ul>
+                    </div>
+                    <div class="cert-item">
+                        <h4>🎓 Certification Support</h4>
+                        <ul>
+                            <li>End-to-end guidance for IT certifications</li>
+                            <li>Preparation strategies &amp; exam orientation</li>
+                            <li>Mock tests and practice support</li>
+                        </ul>
+                    </div>
+                    <div class="cert-item">
+                        <h4>🎫 Certification Voucher Services</h4>
+                        <ul>
+                            <li>All IT certification exam vouchers available</li>
+                            <li>AWS, Azure, Google Cloud, and more</li>
+                            <li>Affordable and reliable voucher support</li>
+                        </ul>
+                    </div>
+                    <div class="cert-item">
+                        <h4>🏫 Customized College Programs</h4>
+                        <ul>
+                            <li>Training tailored to college requirements</li>
+                            <li>Flexible scheduling and batch programs</li>
+                            <li>Skill development aligned with industry needs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features section">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Why Choose CertEducation?</h2>
+                <p>We provide the best paths to achieve your career goals in the tech industry through a career-focused
+                    learning approach.</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                <div class="feature-card image-card hover-lift">
+                    <img src="assets/expert_trainer_v2.png" alt="Industry Expert Trainers" class="card-banner">
+                    <div class="card-content">
+                        <h3>Industry Expert Trainers</h3>
+                        <p style="margin-bottom: 0;">Learn from professionals actively working in the industry with an
+                            industry-relevant curriculum.</p>
+                    </div>
+                </div>
+                <div class="feature-card image-card hover-lift delay-1">
+                    <img src="assets/practical_labs_v2.png" alt="Hands-on Practical Labs" class="card-banner">
+                    <div class="card-content">
+                        <h3>Hands-on Practical Labs</h3>
+                        <p style="margin-bottom: 0;">Practice what you learn with real-world scenarios and hands-on
+                            practical sessions.</p>
+                    </div>
+                </div>
+                <div class="feature-card image-card hover-lift delay-2">
+                    <img src="assets/cert_support_v2.png" alt="Dedicated Certification Support" class="card-banner">
+                    <div class="card-content">
+                        <h3>Dedicated Certification Support</h3>
+                        <p style="margin-bottom: 0;">Get guided for certification success by mentors who officially hold
+                            top IT credentials.</p>
+                    </div>
+                </div>
+                <div class="feature-card image-card hover-lift delay-3">
+                    <img src="assets/voucher_pricing_v2.png" alt="Affordable Voucher Pricing" class="card-banner">
+                    <div class="card-content">
+                        <h3>Affordable Voucher Pricing</h3>
+                        <p style="margin-bottom: 0;">Access official IT certification exam vouchers at highly
+                            competitive rates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section - Intentionally omitted from Header Nav -->
+    <section class="testimonials section bg-light">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>What Our Students Say</h2>
+                <p>Read success stories from professionals who accelerated their careers with CertEducation.</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div class="testimonial-card hover-lift"
+                    style="background: var(--white); padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.03); border-top: 4px solid var(--secondary-orange);">
+                    <div
+                        style="color: var(--secondary-orange); font-size: 4rem; line-height: 0.5; margin-bottom: 20px; font-family: serif;">
+                        "</div>
+                    <p style="font-style: italic; color: var(--text-muted); margin-bottom: 25px; line-height: 1.6;">The
+                        AWS Cloud Practitioner training was phenomenal. The instructor broke down complex architectures
+                        into highly digestible concepts. I passed my exam on the very first try!</p>
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div
+                            style="width: 50px; height: 50px; border-radius: 50%; background: var(--primary-blue); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.2rem;">
+                            SR</div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 1.1rem; color: var(--dark-blue);">Sarah R.</h4>
+                            <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Cloud
+                                Engineer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card hover-lift delay-1"
+                    style="background: var(--white); padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.03); border-top: 4px solid var(--secondary-orange);">
+                    <div
+                        style="color: var(--secondary-orange); font-size: 4rem; line-height: 0.5; margin-bottom: 20px; font-family: serif;">
+                        "</div>
+                    <p style="font-style: italic; color: var(--text-muted); margin-bottom: 25px; line-height: 1.6;">I
+                        was extremely impressed by the customized college program. The hands-on labs and real-world
+                        approach made all the difference in understanding Kubernetes natively.</p>
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div
+                            style="width: 50px; height: 50px; border-radius: 50%; background: var(--primary-blue); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.2rem;">
+                            MK</div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 1.1rem; color: var(--dark-blue);">Michael K.</h4>
+                            <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">DevOps
+                                Associate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card hover-lift delay-2"
+                    style="background: var(--white); padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.03); border-top: 4px solid var(--secondary-orange);">
+                    <div
+                        style="color: var(--secondary-orange); font-size: 4rem; line-height: 0.5; margin-bottom: 20px; font-family: serif;">
+                        "</div>
+                    <p style="font-style: italic; color: var(--text-muted); margin-bottom: 25px; line-height: 1.6;">
+                        Getting my CompTIA voucher here was incredibly seamless and affordable. The support team walked
+                        me through the entire booking process right on WhatsApp!</p>
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div
+                            style="width: 50px; height: 50px; border-radius: 50%; background: var(--primary-blue); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.2rem;">
+                            AJ</div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 1.1rem; color: var(--dark-blue);">Ananya J.</h4>
+                            <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">IT Support
+                                Specialist</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="training" class="cta section overlay text-white text-center">
+        <div class="container">
+            <h2>Start Your Journey Today</h2>
+            <p>Fill out the form below and our team will get in touch with you.</p>
+
+            <div class="mt-5 glass-form-container">
+                <form name="submit-to-google-sheet" id="contactForm" class="contact-grid-form">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" name="Phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" name="Email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Service Required</label>
+                        <select name="ServiceType" id="serviceType" required onchange="updateDynamicField()">
+                            <option value="" disabled selected>Training or Voucher?</option>
+                            <option value="Training Course">Training Course</option>
+                            <option value="Certification Voucher">Certification Voucher</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="dynamicFieldWrapper" style="display: none;">
+                        <label id="dynamicLabel">Specific Requirement</label>
+                        <input type="text" name="SpecificRequirement" id="specificRequirement" placeholder="">
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">Submit Request</button>
+                    <p id="form-message" class="form-message"></p>
+                </form>
+            </div>
+
+            <!-- SweetAlert Library -->
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <script>
+                function updateDynamicField() {
+                    const type = document.getElementById('serviceType').value;
+                    const wrapper = document.getElementById('dynamicFieldWrapper');
+                    const label = document.getElementById('dynamicLabel');
+                    const input = document.getElementById('specificRequirement');
+
+                    wrapper.style.display = 'block';
+                    input.required = true; // Make it required once visible
+
+                    if (type === 'Training Course') {
+                        label.textContent = 'Which Course?';
+                        input.placeholder = 'e.g., AWS Cloud Practitioner';
+                    } else {
+                        label.textContent = 'Which Voucher?';
+                        input.placeholder = 'e.g., CompTIA Security+';
+                    }
+                }
+
+                // Google Apps Script Submission Logic
+                const scriptURL = "https://script.google.com/macros/s/AKfycbyS_PPeZ8pJ6xJwId6qrspODljcSViA6tiWSZA4kthXfiKTjfwOxGOl3wVoGd5zQ2eM1A/exec";
+                const form = document.forms["submit-to-google-sheet"];
+                const submitBtn = document.getElementById('submitBtn');
+
+                form.addEventListener("submit", (e) => {
+                    e.preventDefault();
+
+                    // Show loading state
+                    const originalBtnText = submitBtn.innerText;
+                    submitBtn.innerText = "Submitting...";
+                    submitBtn.disabled = true;
+
+                    var formData = new FormData(form);
+
+                    // Explicit fallback to guarantee dropdown values are perfectly captured
+                    formData.set("ServiceType", document.getElementById('serviceType').value || "");
+                    formData.set("SpecificRequirement", document.getElementById('specificRequirement').value || "");
+
+                    // Convert to strict URL-encoded string to prevent Google Apps Script parsing failures
+                    const urlEncodedData = new URLSearchParams(formData).toString();
+
+                    fetch(scriptURL, {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/x-www-form-urlencoded"
+                        },
+                        body: urlEncodedData
+                    })
+                        .then((response) => {
+                            swal("Done", "Submitted Successfully.", "success");
+                            form.reset();
+                            document.getElementById('dynamicFieldWrapper').style.display = 'none';
+                            submitBtn.innerText = originalBtnText;
+                            submitBtn.disabled = false;
+                        })
+                        .catch((error) => {
+                            swal("Error", "Something went wrong. Please try again!", "error");
+                            submitBtn.innerText = originalBtnText;
+                            submitBtn.disabled = false;
+                        });
+                });
+            </script>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid-layout">
+            <div class="footer-col">
+                <a href="#" class="logo footer-logo">
+                    <img src="assets/company_logo.png" alt="CertEducation Logo" class="brand-logo footer-brand-img">
+                </a>
+                <p style="margin-top: 15px;">Empowering the next generation of IT professionals with cloud
+                    certifications and training.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="vouchers.html">Vouchers</a></li>
+                    <li><a href="#features">Why Choose Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Location</h4>
+                <p>Vijayawada<br>Andhra Pradesh, India</p>
+            </div>
+            <div class="footer-col" id="contact">
+                <h4>Contact Details</h4>
+                <p><strong>Email:</strong><br><a href="mailto:certeducationofficial@gmail.com"
+                        class="text-white">certeducationofficial@gmail.com</a></p>
+                <p style="margin-top: 10px;"><strong>WhatsApp:</strong><br><a href="tel:+919642296144"
+                        class="text-white">+91 9642296144</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center mt-4">
+            <p>&copy; 2026 CertEducation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919642296144?text=Hi,%20I%20am%20interested%20in%20CertEducation%20training%20and%20certification%20programs."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 413.3c-31.4 0-62.1-8.5-89-24.5l-6.4-3.8-66.2 17.4 17.6-64.5-4.2-6.7c-17.6-28-26.8-60.1-26.8-93.1 0-103.5 84.3-187.8 187.8-187.8 50.2 0 97.4 19.6 132.9 55.1 35.5 35.5 55.1 82.7 55.1 133-1 103.5-85.3 187.9-188.8 187.9zM302.3 273.7c-4.3-2.1-25.3-12.5-29.2-13.9-3.9-1.4-6.8-2.1-9.6 2.1-2.9 4.3-11 13.9-13.6 16.8-2.1 2.9-4.7 3.2-9 1.1-4.3-2.1-18.1-6.7-34.5-21.4-12.8-11.5-21.4-25.7-24-30-2.5-4.3-.3-6.6 1.8-8.7 1.9-1.9 4.3-5 6.4-7.5 2.1-2.5 2.9-4.3 4.3-7.1 1.4-2.9.7-5.4-.4-7.5-1.1-2.1-9.6-23.2-13.2-31.8-3.5-8.4-7-7.2-9.6-7.4-2.5-.1-5.4-.1-8.2-.1-2.9 0-7.5 1.1-11.4 5.4-3.9 4.3-15 14.6-15 35.7 0 21.1 15.4 41.4 17.5 44.3 2.1 2.9 30 46.8 73.5 65.6 43.5 18.8 43.5 12.5 51.4 11.8 7.9-.7 25.3-10.4 28.9-20.4 3.6-10 3.6-18.6 2.5-20.4-1.1-1.8-4.1-2.8-8.4-4.9z" />
+        </svg>
+        <span>Chat with us on WhatsApp</span>
+    </a>
+
+    <script src="js/script.js?v=5"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const msg = document.getElementById('form-message');
+            msg.style.display = 'block';
+            msg.textContent = 'Thank you! Your request has been received.';
+            setTimeout(() => {
+                this.reset();
+                msg.style.display = 'none';
+            }, 5000);
+        });
+    </script>
+</body>
+
+</html>
