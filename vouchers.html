@@ -167,6 +167,7 @@
             font-size: 1.05rem;
         }
     </style>
+    <link rel="icon" type="image/png" href="assets/company_logo.png">
 </head>
 
 <body>
@@ -184,25 +185,62 @@
     <div class="cursor-dot"></div>
     <div class="cursor-outline"></div>
 
-    <nav class="navbar">
+    <header class="main-header">
+    <div class="top-bar container">
+        <div class="top-bar-logo">
+            <a href="index.html"><img src="assets/company_logo.png" alt="CertEducation Logo" class="brand-logo"></a>
+        </div>
+        <div class="top-bar-info">
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt icon-orange"></i>
+                <div class="info-text">
+                    <strong>Our Office</strong>
+                    <span>Vijayawada, AP</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope icon-orange"></i>
+                <div class="info-text">
+                    <strong>Email Us</strong>
+                    <span>certeducationofficial@gmail.com</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone-alt icon-orange"></i>
+                <div class="info-text">
+                    <strong>Call Us</strong>
+                    <span>+91 7799040625<br>+91 9642296144</span>
+                </div>
+            </div>
+            <div class="info-item msme-badge">
+                <div class="msme-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="msme-text">
+                    <span class="msme-title">Govt. of India</span>
+                    <span class="msme-bold">MSME Registered</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar theme-bg">
         <div class="container nav-content">
-            <a href="index.html" class="logo">
-                <img src="assets/company_logo.png" alt="CertEducation Logo" class="brand-logo">
-            </a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#services">Services</a></li>
-                <li><a href="vouchers.html" style="color: var(--primary-blue);">Vouchers</a></li>
+                <li><a href="vouchers.html">Vouchers</a></li>
                 <li><a href="index.html#features">Why Us</a></li>
             </ul>
-            <a href="#training" class="btn btn-primary magnetic-btn">Book Voucher</a>
+            <a href="https://wa.me/919642296144" class="btn whatsapp-nav-btn magnetic-btn" target="_blank">
+                <i class="fab fa-whatsapp" style="font-size: 1.2rem; margin-right: 5px;"></i> WhatsApp
+            </a>
             <div class="mobile-menu-btn">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <span class="bar" style="background-color: var(--white);"></span>
+                <span class="bar" style="background-color: var(--white);"></span>
+                <span class="bar" style="background-color: var(--white);"></span>
             </div>
         </div>
     </nav>
+</header>
 
     <header class="hero" style="padding: 180px 0 100px;">
         <div class="hero-bg">
@@ -468,7 +506,7 @@
                 <p><strong>Email:</strong><br><a href="mailto:certeducationofficial@gmail.com"
                         class="text-white">certeducationofficial@gmail.com</a></p>
                 <p style="margin-top: 10px;"><strong>WhatsApp:</strong><br><a href="tel:+919642296144"
-                        class="text-white">+91 9642296144</a></p>
+                        class="text-white">+91 9642296144</a></p><p style="margin-top: 10px;"><strong>LinkedIn:</strong><br><a href="https://www.linkedin.com/company/certeducation" class="text-white" target="_blank"><i class="fab fa-linkedin" style="font-size: 1.5rem; margin-top: 5px; color: #0077b5;"></i> CertEducation</a></p>
             </div>
         </div>
         <div class="footer-bottom text-center mt-4">
@@ -485,19 +523,8 @@
         <span>Chat with us on WhatsApp</span>
     </a>
 
-    <script src="js/script.js?v=5"></script>
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            const msg = document.getElementById('form-message');
-            msg.style.display = 'block';
-            msg.textContent = 'Thank you! Your voucher request has been received.';
-            setTimeout(() => {
-                this.reset();
-                msg.style.display = 'none';
-            }, 5000);
-        });
-    </script>
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>

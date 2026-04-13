@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css?v=4">
+    <link rel="icon" type="image/png" href="assets/company_logo.png">
 </head>
 <body>
     <div class="preloader"><div class="loader-content"><span class="loader-circle"></span><h2>CERTEDUCATION</h2></div></div>
@@ -16,20 +17,62 @@
     <div class="cursor-dot"></div>
     <div class="cursor-outline"></div>
 
-    <nav class="navbar">
+    <header class="main-header">
+    <div class="top-bar container">
+        <div class="top-bar-logo">
+            <a href="index.html"><img src="assets/company_logo.png" alt="CertEducation Logo" class="brand-logo"></a>
+        </div>
+        <div class="top-bar-info">
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt icon-orange"></i>
+                <div class="info-text">
+                    <strong>Our Office</strong>
+                    <span>Vijayawada, AP</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope icon-orange"></i>
+                <div class="info-text">
+                    <strong>Email Us</strong>
+                    <span>certeducationofficial@gmail.com</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone-alt icon-orange"></i>
+                <div class="info-text">
+                    <strong>Call Us</strong>
+                    <span>+91 7799040625<br>+91 9642296144</span>
+                </div>
+            </div>
+            <div class="info-item msme-badge">
+                <div class="msme-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="msme-text">
+                    <span class="msme-title">Govt. of India</span>
+                    <span class="msme-bold">MSME Registered</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar theme-bg">
         <div class="container nav-content">
-            <a href="index.html" class="logo"><img src="assets/company_logo.png" alt="CertEducation Logo" class="brand-logo"></a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="vouchers.html">Exam Vouchers</a></li>
-                <li><a href="training.html">Training Courses</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="vouchers.html">Vouchers</a></li>
+                <li><a href="index.html#features">Why Us</a></li>
             </ul>
-            <a href="contact.html" class="btn btn-primary magnetic-btn">Get in Touch</a>
-            <div class="mobile-menu-btn"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            <a href="https://wa.me/919642296144" class="btn whatsapp-nav-btn magnetic-btn" target="_blank">
+                <i class="fab fa-whatsapp" style="font-size: 1.2rem; margin-right: 5px;"></i> WhatsApp
+            </a>
+            <div class="mobile-menu-btn">
+                <span class="bar" style="background-color: var(--white);"></span>
+                <span class="bar" style="background-color: var(--white);"></span>
+                <span class="bar" style="background-color: var(--white);"></span>
+            </div>
         </div>
     </nav>
+</header>
 
     <!-- Page Header -->
     <div class="hero" style="padding: 180px 0 80px; min-height: auto;">
@@ -86,3 +129,4 @@
     <script src="js/script.js?v=4"></script>
 </body>
 </html>
+

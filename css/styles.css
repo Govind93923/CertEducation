@@ -492,6 +492,7 @@ ul {
 .image-card .card-content {
     padding: 30px;
 }
+
 .feature-card {
     background: linear-gradient(145deg, #ffffff, #fdfbfb);
     padding: 40px 30px;
@@ -639,7 +640,8 @@ ul {
     left: 0;
     color: var(--secondary-orange);
     font-weight: 800;
-    font-family: Arial, sans-serif; /* For consistent bullet rendering */
+    font-family: Arial, sans-serif;
+    /* For consistent bullet rendering */
 }
 
 .slogan-text {
@@ -1045,7 +1047,8 @@ ul {
     margin-top: 15px;
     display: none;
     text-align: center;
-    color: #25d366; /* Success green */
+    color: #25d366;
+    /* Success green */
     font-weight: 600;
 }
 
@@ -1054,6 +1057,7 @@ ul {
     .contact-grid-form {
         grid-template-columns: 1fr;
     }
+
     .glass-form-container {
         padding: 25px;
     }
@@ -1157,4 +1161,245 @@ ul {
     .hero {
         padding: 120px 0 60px;
     }
+}
+
+/* Full-Width Hero Banner */
+.hero-banner {
+    position: relative;
+    width: 100%;
+    min-height: 90vh; /* Creates a massive, immersive backdrop */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url("../assets/hero_banner_v1.png") no-repeat center center/cover;
+    padding-top: 80px; /* Offset for fixed nav */
+}
+
+.hero-banner::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(10, 27, 54, 0.70); /* Deep dark blue overlay for text readability */
+    z-index: 1;
+}
+
+.hero-banner .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 20px;
+    display: block !important;
+}
+
+.hero-banner .hero-content h1 {
+    color: var(--white);
+    font-size: 3.8rem;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.hero-banner .hero-content p {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.35rem;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+/* Premium Vector Card Styling */
+.image-card {
+    background: linear-gradient(145deg, #ffffff, #f0f4f8);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(10, 27, 54, 0.08);
+    border: 1px solid rgba(28, 84, 159, 0.05);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+}
+
+.card-banner {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--secondary-orange);
+    transition: transform 0.6s ease;
+}
+
+.image-card .card-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #fff;
+}
+
+.image-card:hover .card-banner {
+    transform: scale(1.05);
+}
+
+.hover-lift:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(28, 84, 159, 0.15);
+}
+
+/* Premium Navbar Sizing */
+.brand-logo {
+    max-height: 80px !important; /* Forces the clean logo to be much larger and legible */
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+    transform: scale(1.05); /* Slight bounce on logo hover */
+}
+
+/* Two-Tier Header Layout */
+.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+}
+
+/* Force the top bar to expand wider than the usual 1200px limit, but not so wide that it leaves a massive gap */
+.top-bar.container {
+    max-width: 1250px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.top-bar-logo .brand-logo {
+    max-height: 120px !important; 
+    transform: scale(2.2) translateX(15px); /* Massive magnify to counter internal whitespace, shifted slightly right to compensate */
+    transform-origin: left center;
+}
+
+.top-bar-info {
+    display: flex;
+    gap: 45px; /* Added much more breathing room so the elements align beautifully */
+    align-items: center; /* keep everything middle-aligned */
+    padding-right: 15px;
+}
+
+/* Kill the floating green whatsapp button globally */
+.whatsapp-float {
+    display: none !important;
+}
+
+/* Premium MSME Badge Styling */
+.msme-badge {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #f8f9fa, #e2e8f0);
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 8px 15px;
+    gap: 12px;
+    margin-left: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.msme-icon i {
+    color: var(--primary-blue);
+    font-size: 2rem;
+}
+
+.msme-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.msme-title {
+    font-size: 0.70rem;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.msme-bold {
+    font-weight: 800;
+    color: var(--secondary-orange);
+    font-size: 0.95rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-orange {
+    color: var(--secondary-orange);
+    font-size: 1.8rem;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.info-text strong {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--primary-blue);
+}
+
+/* Override existing navbar to sit inside the new header cleanly */
+.main-header .navbar {
+    position: relative !important;
+    top: auto;
+    background: var(--primary-blue) !important;
+    backdrop-filter: none;
+    box-shadow: none;
+    padding: 10px 0;
+}
+
+.main-header .nav-links a {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.main-header .nav-links a:hover {
+    color: var(--secondary-orange) !important;
+}
+
+.whatsapp-nav-btn {
+    background: var(--secondary-orange) !important;
+    color: #fff !important;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 25px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.whatsapp-nav-btn:hover {
+    background: #e07b22 !important;
+    transform: translateY(-2px);
+}
+
+/* Adjust the padding so the page content doesn't get hidden behind the new taller header */
+body {
+    /* Removed padding-top here to allow the hero background to properly stretch */
+}
+
+.hero-banner {
+    padding-top: 180px !important; /* Pushes the hero text down past the massive dual-header */
 }

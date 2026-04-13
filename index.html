@@ -62,6 +62,7 @@
             }
         }
     </style>
+    <link rel="icon" type="image/png" href="assets/company_logo.png">
 </head>
 
 <body>
@@ -79,48 +80,72 @@
     <div class="cursor-dot"></div>
     <div class="cursor-outline"></div>
 
-    <nav class="navbar">
+    <header class="main-header">
+    <div class="top-bar container">
+        <div class="top-bar-logo">
+            <a href="index.html"><img src="assets/company_logo.png" alt="CertEducation Logo" class="brand-logo"></a>
+        </div>
+        <div class="top-bar-info">
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt icon-orange"></i>
+                <div class="info-text">
+                    <strong>Our Office</strong>
+                    <span>Vijayawada, AP</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope icon-orange"></i>
+                <div class="info-text">
+                    <strong>Email Us</strong>
+                    <span>certeducationofficial@gmail.com</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone-alt icon-orange"></i>
+                <div class="info-text">
+                    <strong>Call Us</strong>
+                    <span>+91 7799040625<br>+91 9642296144</span>
+                </div>
+            </div>
+            <div class="info-item msme-badge">
+                <div class="msme-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="msme-text">
+                    <span class="msme-title">Govt. of India</span>
+                    <span class="msme-bold">MSME Registered</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar theme-bg">
         <div class="container nav-content">
-            <a href="#" class="logo">
-                <img src="assets/company_logo.png" alt="CertEducation Logo" class="brand-logo">
-            </a>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
                 <li><a href="vouchers.html">Vouchers</a></li>
-                <li><a href="#features">Why Us</a></li>
+                <li><a href="index.html#features">Why Us</a></li>
             </ul>
-            <a href="#training" class="btn btn-primary magnetic-btn">Enroll Now</a>
+            <a href="https://wa.me/919642296144" class="btn whatsapp-nav-btn magnetic-btn" target="_blank">
+                <i class="fab fa-whatsapp" style="font-size: 1.2rem; margin-right: 5px;"></i> WhatsApp
+            </a>
             <div class="mobile-menu-btn">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <span class="bar" style="background-color: var(--white);"></span>
+                <span class="bar" style="background-color: var(--white);"></span>
+                <span class="bar" style="background-color: var(--white);"></span>
             </div>
         </div>
     </nav>
+</header>
 
-    <header id="home" class="hero">
-        <div class="hero-bg">
-            <div class="blob blob-1"></div>
-            <div class="blob blob-2"></div>
-            <div class="blob blob-3"></div>
-        </div>
-        <div class="container hero-content">
-            <div class="hero-text">
-                <p class="fade-in-up"
-                    style="color: var(--secondary-orange); font-weight: 700; margin-bottom: 15px; letter-spacing: 1px; text-transform: uppercase;">
-                    All IT Certification Vouchers Available</p>
-                <h1 class="fade-in-up delay-1">Cloud &amp; IT Certification Training</h1>
-                <p class="fade-in-up delay-2">Learn • Get Certified • Build Your Career</p>
-                <div class="hero-buttons fade-in-up delay-3">
-                    <a href="#training" class="btn btn-primary btn-lg magnetic-btn">Enroll Now</a>
-                </div>
-            </div>
-            <div class="hero-image fade-in-up delay-3">
-                <div class="glass-card">
-                    <img src="assets/hero.png" alt="Cloud & IT Certification Training">
-                </div>
+    <header id="home" class="hero-banner">
+        <div class="container hero-content text-center">
+            <p class="fade-in-up"
+                style="color: var(--secondary-orange); font-weight: 700; margin-bottom: 15px; letter-spacing: 1px; text-transform: uppercase;">
+                All IT Certification Vouchers Available</p>
+            <h1 class="fade-in-up delay-1">Cloud &amp; IT Certification Training</h1>
+            <p class="fade-in-up delay-2">Learn • Get Certified • Build Your Career</p>
+            <div class="hero-buttons fade-in-up delay-3" style="justify-content: center;">
+                <a href="#training" class="btn btn-primary btn-lg magnetic-btn">Enroll Now</a>
             </div>
         </div>
     </header>
@@ -206,7 +231,7 @@
             </div>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
                 <div class="feature-card image-card hover-lift">
-                    <img src="assets/expert_trainer_v2.png" alt="Industry Expert Trainers" class="card-banner">
+                    <img src="assets/expert_trainer_v4.png" alt="Industry Expert Trainers" class="card-banner">
                     <div class="card-content">
                         <h3>Industry Expert Trainers</h3>
                         <p style="margin-bottom: 0;">Learn from professionals actively working in the industry with an
@@ -214,7 +239,7 @@
                     </div>
                 </div>
                 <div class="feature-card image-card hover-lift delay-1">
-                    <img src="assets/practical_labs_v2.png" alt="Hands-on Practical Labs" class="card-banner">
+                    <img src="assets/practical_labs_v4.png" alt="Hands-on Practical Labs" class="card-banner">
                     <div class="card-content">
                         <h3>Hands-on Practical Labs</h3>
                         <p style="margin-bottom: 0;">Practice what you learn with real-world scenarios and hands-on
@@ -222,7 +247,7 @@
                     </div>
                 </div>
                 <div class="feature-card image-card hover-lift delay-2">
-                    <img src="assets/cert_support_v2.png" alt="Dedicated Certification Support" class="card-banner">
+                    <img src="assets/cert_support_v4.png" alt="Dedicated Certification Support" class="card-banner">
                     <div class="card-content">
                         <h3>Dedicated Certification Support</h3>
                         <p style="margin-bottom: 0;">Get guided for certification success by mentors who officially hold
@@ -230,7 +255,7 @@
                     </div>
                 </div>
                 <div class="feature-card image-card hover-lift delay-3">
-                    <img src="assets/voucher_pricing_v2.png" alt="Affordable Voucher Pricing" class="card-banner">
+                    <img src="assets/voucher_pricing_v4.png" alt="Affordable Voucher Pricing" class="card-banner">
                     <div class="card-content">
                         <h3>Affordable Voucher Pricing</h3>
                         <p style="margin-bottom: 0;">Access official IT certification exam vouchers at highly
@@ -333,7 +358,7 @@
                     </div>
                     <div class="form-group">
                         <label>Service Required</label>
-                        <select name="ServiceType" id="serviceType" required onchange="updateDynamicField()">
+                        <select name="ServiceRequired" id="serviceType" required onchange="updateDynamicField()">
                             <option value="" disabled selected>Training or Voucher?</option>
                             <option value="Training Course">Training Course</option>
                             <option value="Certification Voucher">Certification Voucher</option>
@@ -344,12 +369,11 @@
                         <input type="text" name="SpecificRequirement" id="specificRequirement" placeholder="">
                     </div>
                     <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">Submit Request</button>
-                    <p id="form-message" class="form-message"></p>
                 </form>
             </div>
 
-            <!-- SweetAlert Library -->
-            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <!-- Premium SweetAlert2 Library -->
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
             <script>
                 function updateDynamicField() {
                     const type = document.getElementById('serviceType').value;
@@ -370,7 +394,7 @@
                 }
 
                 // Google Apps Script Submission Logic
-                const scriptURL = "https://script.google.com/macros/s/AKfycbyS_PPeZ8pJ6xJwId6qrspODljcSViA6tiWSZA4kthXfiKTjfwOxGOl3wVoGd5zQ2eM1A/exec";
+                const scriptURL = "https://script.google.com/macros/s/AKfycbzUehmvgqkfV1eFhSgXNSFTU4qJQxJPTg8lWxd5EEagHrQ0zUjEF5_pHgSkMcd5jAZV5Q/exec";
                 const form = document.forms["submit-to-google-sheet"];
                 const submitBtn = document.getElementById('submitBtn');
 
@@ -384,9 +408,20 @@
 
                     var formData = new FormData(form);
 
-                    // Explicit fallback to guarantee dropdown values are perfectly captured
-                    formData.set("ServiceType", document.getElementById('serviceType').value || "");
-                    formData.set("SpecificRequirement", document.getElementById('specificRequirement').value || "");
+                    // Explicit fallback: duplicate the values across every possible header typo the user might have in their spreadsheet
+                    const svc = document.getElementById('serviceType').value || "";
+                    const req = document.getElementById('specificRequirement').value || "";
+
+                    formData.set("ServiceRequired", svc);
+                    formData.set("ServiceType", svc);
+                    formData.set("Service", svc);
+                    formData.set("service", svc);
+                    formData.set("Service Required", svc);
+
+                    formData.set("SpecificRequirement", req);
+                    formData.set("Requirement", req);
+                    formData.set("Specific", req);
+                    formData.set("Specific Requirement", req);
 
                     // Convert to strict URL-encoded string to prevent Google Apps Script parsing failures
                     const urlEncodedData = new URLSearchParams(formData).toString();
@@ -399,14 +434,37 @@
                         body: urlEncodedData
                     })
                         .then((response) => {
-                            swal("Done", "Submitted Successfully.", "success");
+                            // Upgraded SweetAlert2 Premium Branded Popup
+                            Swal.fire({
+                                title: 'Success!',
+                                text: 'Your request has been sent. We will contact you shortly!',
+                                icon: 'success',
+                                confirmButtonText: 'Great!',
+                                buttonsStyling: false,
+                                customClass: {
+                                    confirmButton: 'btn btn-primary'
+                                },
+                                background: '#ffffff',
+                                color: '#0B3C6D'
+                            });
+
                             form.reset();
                             document.getElementById('dynamicFieldWrapper').style.display = 'none';
                             submitBtn.innerText = originalBtnText;
                             submitBtn.disabled = false;
                         })
                         .catch((error) => {
-                            swal("Error", "Something went wrong. Please try again!", "error");
+                            Swal.fire({
+                                title: 'Oops...',
+                                text: 'Something went wrong. Please try again later!',
+                                icon: 'error',
+                                confirmButtonText: 'Close',
+                                buttonsStyling: false,
+                                customClass: {
+                                    confirmButton: 'btn btn-primary'
+                                },
+                                color: '#0B3C6D'
+                            });
                             submitBtn.innerText = originalBtnText;
                             submitBtn.disabled = false;
                         });
@@ -443,7 +501,7 @@
                 <p><strong>Email:</strong><br><a href="mailto:certeducationofficial@gmail.com"
                         class="text-white">certeducationofficial@gmail.com</a></p>
                 <p style="margin-top: 10px;"><strong>WhatsApp:</strong><br><a href="tel:+919642296144"
-                        class="text-white">+91 9642296144</a></p>
+                        class="text-white">+91 9642296144</a></p><p style="margin-top: 10px;"><strong>LinkedIn:</strong><br><a href="https://www.linkedin.com/company/certeducation" class="text-white" target="_blank"><i class="fab fa-linkedin" style="font-size: 1.5rem; margin-top: 5px; color: #0077b5;"></i> CertEducation</a></p>
             </div>
         </div>
         <div class="footer-bottom text-center mt-4">
@@ -462,18 +520,6 @@
     </a>
 
     <script src="js/script.js?v=5"></script>
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            const msg = document.getElementById('form-message');
-            msg.style.display = 'block';
-            msg.textContent = 'Thank you! Your request has been received.';
-            setTimeout(() => {
-                this.reset();
-                msg.style.display = 'none';
-            }, 5000);
-        });
-    </script>
 </body>
 
 </html>
